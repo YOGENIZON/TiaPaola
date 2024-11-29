@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Guardería</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Guardería Tía Paola</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#registro">Registro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lista">Lista de Niños</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <header class="bg-light text-center py-5">
+        <h1 class="display-4">Bienvenidos a la Guardería de Tía Paola</h1>
+        <p class="lead">Cuidamos a tus pequeños con amor y dedicación.</p>
+    </header>
+
+   
+    <section id="registro" class="container my-5">
+        <h2 class="text-center mb-4">Registro de Niño</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre del Niño</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre">
+            </div>
+            <div class="mb-3">
+                <label for="edad" class="form-label">Edad</label>
+                <input type="number" class="form-control" id="edad" placeholder="Ingrese la edad">
+            </div>
+            <div class="mb-3">
+                <label for="padre" class="form-label">Nombre del Padre o Tutor</label>
+                <input type="text" class="form-control" id="padre" placeholder="Ingrese el nombre del padre o tutor">
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono de Contacto</label>
+                <input type="text" class="form-control" id="telefono" placeholder="Ingrese el número de teléfono">
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar</button>
+        </form>
+    </section>
+
+  
+    <section id="lista" class="container my-5">
+        <h2 class="text-center mb-4">Lista de Niños Registrados</h2>
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Padre/Tutor</th>
+                    <th>Teléfono</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Juan Pérez</td>
+                    <td>3</td>
+                    <td>Carlos Pérez</td>
+                    <td>809-123-4567</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>María García</td>
+                    <td>4</td>
+                    <td>Lucía García</td>
+                    <td>809-987-6543</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <footer class="bg-primary text-white text-center py-3">
+        <p class="mb-0">&copy; 2024 Yonki code XD. Todos los derechos reservados.</p>
+    </footer>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
